@@ -46,7 +46,7 @@
                                   <td>{{ $item->destinasi }}</td>
                                   <td>{{ Carbon\Carbon::parse($item->start_date)->format('D, d-m-Y H:i A')}}</td>
                                   <td>{{ Carbon\Carbon::parse($item->end_date)->format('D, d-m-Y H:i A') }}</td>
-                                  <td class="text-center"><img src="{{ asset('/storage/doc_img/'. $item->image)}}" width="30px"><br><a href="{{ asset('/storage/doc_img/'. $item->image)}}" title='Detail' target="_blank" class="btn btn-xs btn-dark"><i class='fas fa-play'></i></a></td>
+                                  <td class="text-center"><img src="{{ asset ('/storage/app/public/doc_img/'. $item->image)}}" width="30px"><br><a href="{{ url('/storage/app/public/doc_img/'. $item->image)}}" title='Detail' target="_blank" class="btn btn-xs btn-dark"><i class='fas fa-play'></i></a></td>
                                   <td class="text-center">
                                       @if ($item->status == 'LULUS')
                                           <span class="badge badge-success status">{{ $item->status }}</span>
