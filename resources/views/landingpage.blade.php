@@ -245,7 +245,7 @@
                         <p class="text">Langkah 4: Pemohon Perlu Mengisi Maklumat Yang Diperlukan dan Menekan Butang Hantar.Notifikasi Emel Akan Diberikan Oleh Pihak Admin/Jabatan</p>
                         <p class="text">Langkah 5: Pemohon Perlu Menyemak Status Permohonan Dengan Memasukkan Tempahan ID DiMenu Search.</p>
                         <p class="text">Manual Penggunaan Sistem Secara Terperinci.
-                            <a class="main-btn" href="#" target="_blank">Muat Turun Manual Pengguna</a>
+                            <a class="main-btn" href=""{{ asset('/storage/Manual Pengguna Pengunaan VBS.pdf')}}"" target="_blank">Muat Turun Manual Pengguna</a>
                         </p>
                     </div> <!-- testimonial left content -->
                 </div>
