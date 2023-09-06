@@ -14,7 +14,8 @@
         <div class="col-md-12">
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">Surat /Dokumen Rasmi (Sila Muat Dokumen / Surat Rasmi)</h3>
+                    <h3 class="card-title">Surat /Dokumen Rasmi (Sila Muat Dokumen / Surat Rasmi)</h3><br>
+                    <span class="card-title">**Pastikan Format Gambar jpeg,gif atau png sahaja**</span>
                 </div>
                 <div class="form-group">
                     <div class="input-group">
