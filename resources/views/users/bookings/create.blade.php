@@ -56,22 +56,6 @@
                                         @endif
                                     </div>
                                     <div class="form-group">
-                                        <label for="jawatan" class="form-label">Jawatan<span
-                                                class="text-danger">*</span></label>
-                                        <select name="jawatan" id="jawatan"
-                                            class="form-control @error('jawatan') is-invalid @enderror">
-                                            <option selected disabled>- Sila Pilih Jawatan -</option>
-                                            @foreach ($penggunas as $row)
-                                                <option value="{{ $row->jawatan }}"
-                                                    {{ isset($bookings) ? ($bookings->pengguna_id == $row->id ? 'selected' : '') : '' }}>
-                                                    {{ $row->jawatan }}</option>
-                                            @endforeach
-                                        </select>
-                                        @if ($errors->has('jawatan'))
-                                            <span class="text-danger">{{ $errors->first('jawatan') }}</span>
-                                        @endif
-                                    </div>
-                                    <div class="form-group">
                                         <label class="form-label">Maklumat Pengguna<span
                                                 class="text-danger">*</span></label>
                                         <span class="text-muted mt-3">(Jika lain dari pemohon)</span>
@@ -110,34 +94,6 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 ">
-                                    <div class="form-group">
-                                        <label class="form-label">No Telefon<span class="text-danger">*</span></label>
-                                        <select name="notel" id="notel"
-                                            class="form-control @error('notel') is-invalid @enderror">
-                                            <option selected disabled>- Sila Pilih Nombor Telefon -</option>
-                                            @foreach ($penggunas as $pengguna)
-                                                <option value="{{ $pengguna->notelefon }}">
-                                                    {{ ucfirst($pengguna->notelefon) }}</option>
-                                            @endforeach
-                                        </select>
-                                        @if ($errors->has('notel'))
-                                            <span class="text-danger">{{ $errors->first('notel') }}</span>
-                                        @endif
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label">Sektor / Unit<span class="text-danger">*</span></label>
-                                        <select name="sektor" id="sektor"
-                                            class="form-control @error('sektor') is-invalid @enderror">
-                                            <option selected disabled>- Sila Pilih Sektor / Unit -</option>
-                                            @foreach ($penggunas as $pengguna)
-                                                <option value="{{ $pengguna->sektor }}">{{ ucfirst($pengguna->sektor) }}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                        @if ($errors->has('sektor'))
-                                            <span class="text-danger">{{ $errors->first('sektor') }}</span>
-                                        @endif
-                                    </div>
                                     <div class="form-group">
                                         <label class="form-label">Tujuan<span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="tujuan" placeholder="Tujuan"
