@@ -158,7 +158,7 @@ class BookingsController extends Controller
         //if($booking)
         //{
             toast('Tempahan Berjaya Ditambah!.','success');
-            return redirect('users/bookings');
+            return redirect('/dashboard');
         //}
         //    toast('Tempahan Gagal Ditambah!!','error');
         //    return back()->withInput();
