@@ -318,8 +318,10 @@ return [
             'icon_color' => 'lime',
             //'icon_color' => 'Secondary',
         ],
-        ['header' => 'Menu Pengguna'],
+        ['header' => 'Menu Pengguna',
+         'can'    => 'manage-pengguna',],
         [
+            'can'    => 'manage-pengguna',
             'text'        => 'Pentadbir Sistem',
             'icon'        => 'fas fa-fw fa-users',
             //'icon_color' => 'success',
@@ -376,6 +378,7 @@ return [
             'icon_color' => 'pink',
         ],
         [
+            'can'    => 'manage-pemandu',
             'text' => 'Pemandu',
             //'url'  => 'drivers',
             'route' => 'users.drivers.index',
@@ -384,6 +387,7 @@ return [
             'icon_color' => 'maroon',
         ],
         [
+           'can'    => 'manage-kenderaan',
            'text' => 'Kenderaan',
            //'url'  => 'vehicles',
            'route' => 'users.vehicles.index',
@@ -401,6 +405,7 @@ return [
             'icon_color' => 'teal',
          ],
          [
+            'can'    => 'manage-laporan',
             'text' => 'Laporan',
             //'url'  => 'laporan',
             'route' => 'users.reports.index',
