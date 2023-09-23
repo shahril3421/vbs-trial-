@@ -69,12 +69,12 @@ class BookingsController extends Controller
     {	
         $validatedData = $request->validate([
             'pengguna_id' => 'required',
-            'jawatan' => 'required',
+            //'jawatan' => 'required',
             'namapengguna' => 'required',
             'jenis' => 'required',
             'bilangan' => 'required',
-            'notel' => 'required',
-            'sektor' => 'required',
+            //'notel' => 'required',
+            //'sektor' => 'required',
             'tujuan' => 'required',
             'jarak' => 'required',
             'namapenumpang' => 'required',
@@ -86,14 +86,14 @@ class BookingsController extends Controller
             'image' => 'required|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ],[
             'pengguna_id.required' => 'Nama Pemohon Wajib Diisi.',
-            'jawatan.required' => 'Jawatan Pemohon Wajib Diisi.',
+            //'jawatan.required' => 'Jawatan Pemohon Wajib Diisi.',
             'namapengguna.required' => 'Nama Pengguna Wajib Diisi.',
             'emel.required' => 'Emel Yang Aktif Wajib Diisi.',
             'emel.email' => 'Jenis Format Emel @xyz.',
             'jenis.required' => 'Jenis Tugas Rasmi Wajib Diisi.',
             'bilangan.required' => 'Bilangan Penumpang Wajib Diisi.',
-            'notel.required' => 'Nombor Telefon Pemohon Wajib Diisi.',
-            'sektor.required' => 'Sektor / Unit Organisasi Pemohon Wajib Diisi.',
+            //'notel.required' => 'Nombor Telefon Pemohon Wajib Diisi.',
+            //'sektor.required' => 'Sektor / Unit Organisasi Pemohon Wajib Diisi.',
             'tujuan.required' => 'Tujuan Pemohon Wajib Diisi.',
             'jarak.required' => 'Jarak Perjalanan Pemohon Wajib Diisi.',
             'namapenumpang.required' => 'Nama Penumpang Wajib Diisi.',
@@ -119,12 +119,12 @@ class BookingsController extends Controller
                 $image = $imgname;          
                 $namapemohon = $request->pengguna_id;
                 $emel = $request->emel;
-                $jawatan = $request->jawatan;
+                //$jawatan = $request->jawatan;
                 $namapengguna = strtoupper(trim($request->namapengguna));
                 $jenis = $request->jenis;
                 $bilangan = $request->bilangan;
-                $notel = $request->pengguna_id;
-                $sektor = $request->pengguna_id;
+                //$notel = $request->pengguna_id;
+                //$sektor = $request->pengguna_id;
                 $tujuan = $request->tujuan;
                 $jarak = $request->jarak;
                 $namapenumpang = $request->namapenumpang;
@@ -139,12 +139,12 @@ class BookingsController extends Controller
         $booking->image = $image;
         $booking->emel = $emel;
         $booking->namapemohon = $namapemohon;
-        $booking->jawatan = $jawatan;
+        //$booking->jawatan = $jawatan;
         $booking->namapengguna = $namapengguna;
         $booking->jenis = $jenis;
         $booking->bilangan = $bilangan;
-        $booking->notel = $notel;
-        $booking->sektor = $sektor;
+        //$booking->notel = $notel;
+        //$booking->sektor = $sektor;
         $booking->tujuan = $tujuan;
         $booking->jarak = $jarak;
         $booking->namapenumpang = $namapenumpang;
